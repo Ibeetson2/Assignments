@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="body">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contact">
+        <h2 id="contact">Contact Me</h2>
+        <div id="form-main">
+          <div id="form-div">
+            <form class="form" id="form1">
+
+              <p class="name">
+                <input name="name" type="text"
+                  class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                  id="name" />
+              </p>
+
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
+                  placeholder="Email" />
+              </p>
+
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                  placeholder="Message"></textarea>
+              </p>
+
+
+              <div class="submit">
+                <input type="submit" value="SEND" id="button-blue" />
+                <div class="ease"></div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+    </main>
+
+  </div>
+  <footer id="footer">
+    <p>Adeniyi &copy; 2022</p>
+  </footer>
+</body>
