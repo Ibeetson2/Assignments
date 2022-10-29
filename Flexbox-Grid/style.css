@@ -1,0 +1,252 @@
+html,body{
+  top:0;
+  margin-top: 0;
+}
+
+#main{
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    text-align: center;
+    top: 0;  
+    position: center;
+    display: flex;
+    width: 100%;
+
+
+}
+
+.flex-container {
+    display:flex;
+    margin: 100px auto 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 60px;
+
+
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px ;
+    margin: 0;
+    padding-top: 50px;
+    justify-content: space-around;
+    border-radius: 10px 0 0 10px;
+    height: 400px;
+    width: 180px;
+  font-size: 15px;
+}
+
+.sedans p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Big Shoulders Display";
+}
+
+.sedans h1{
+    color:hsl(0, 0%, 95%);
+    font-family: "lexend deca";
+    
+}
+
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px ;
+    margin: 0;
+    padding-top: 50px;
+    justify-content: space-around;
+    height: 400px;
+    width: 180px;
+    font-size: 15px;
+}
+
+.suvs p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Big Shoulders Display";
+}
+
+.suvs h1{
+    color:hsl(0, 0%, 95%);
+    font-family: "lexend deca";
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px ;
+    margin: 0;
+    padding-top: 50px;
+    justify-content: space-around;
+    border-radius: 0 10px 10px 0;
+    height: 400px;
+    width: 180px;
+    font-size: 15px;
+}
+
+.luxury p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Big Shoulders Display";
+}
+
+.luxury h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "lexend deca";
+}
+
+
+.sedan-btn{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 60px;
+    height: 40px; 
+    border: solid;
+    padding-bottom: 30px;
+    width: 150px;
+}
+.sedan-btn:hover{
+    cursor: pointer;
+    border: solid 3px hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suvs-btn{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 60px;
+    height: 40px;
+    border: solid;
+    padding-bottom: 30px;
+    width: 150px;
+}
+
+.suvs-btn:hover{
+    cursor: pointer;
+    border: solid 3px hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}    
+
+.luxury-btn{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 60px;
+    height: 40px;
+    border: solid;
+    padding-bottom: 30px;
+    width: 150px;
+}
+
+.luxury-btn:hover{
+    cursor: pointer;
+    border: solid 3px hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.grid-btn{
+  border-radius: 20px;
+}
+
+.grid-container{
+    display:grid;
+    width: 800px;
+    height: 600px;
+    margin: 10em auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 1rem;
+    row-gap: 1.2rem;
+    
+}
+
+.box{
+    background-color: red;
+    grid-column: 1/8;
+    grid-row: 1/5;
+}
+
+.box2{
+    background-color: yellow;
+    grid-column: 8/13;
+    grid-row: 1/5;
+}
+
+.box3{
+    background-color: green;
+    grid-column: 1/6;
+    grid-row: 5/10;
+}
+
+.box4{
+    display: grid;
+    grid-column: 6/13;
+    grid-row: 5/10;
+    grid-template-rows: 40% 54%;
+    gap: 1.2em;
+}
+.grid-item{
+    background-color: #01AEFD;
+}
+
+.grid-item2{
+    background-color: #01AEFD;
+}
+
+@media screen and (min-width: 760px){
+  .flex-container{
+    grid-template-row: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    max-width: 63rem;
+  }
+  .sedan-btn{
+    padding: 10px 30px;
+    position: absolute;
+    bottom:5rem;
+  } 
+  .suvs-btn{
+    padding: 10px 30px;
+    position: absolute;
+    bottom:5rem;
+  }
+    .luxury-btn{
+    padding: 10px 30px;
+    position: absolute;
+    bottom:5rem;
+  }
+
+  
+  
+    .grid-container{
+    grid-template-row: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    max-width: 63rem;
+      height:33.7rem;
+  }
+  
+  
+}
